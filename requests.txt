@@ -1,0 +1,43 @@
+POST /createClient
+
+{
+   "redirect-uri": "shape-api.pl",
+   "grant-type": "password"
+}
+
+{
+  "client_id": "1_3h7ohwsn1uyo0og040oc8s8c8csc4wcocws40c8cg4c8so8g8k",
+  "client_secret": "1io41krmqdtwcco0ok4c84sgcok480000so4888sscksc4s4go"
+}
+
+Content-type: application/json
+
+POST /oauth/v2/token
+
+{
+   "redirect-uri": "shape-api.pl",
+   "grant_type": "password",
+   "client_id": "1_3h7ohwsn1uyo0og040oc8s8c8csc4wcocws40c8cg4c8so8g8k",
+   "client_secret": "1io41krmqdtwcco0ok4c84sgcok480000so4888sscksc4s4go"
+   "username": "test",
+   "password": "test"
+}
+
+
+{
+   "access_token": "MmI2ZGFhZmMwNWRmZTJhY2IyMTQxM2VjNGMwNzczZDJiYmJiMzlhNTljNzM0Mjc2MThhNDI4NzA5ZTEwOTQ2Nw",
+   "expires_in": 86400,
+   "token_type": "bearer",
+   "scope": null,
+   "refresh_token": "ZGQxN2QzMGZkNGQ3YmViNzI2ZDYwZGJmMDNmMzM5MWU0YzMwYmM0YTk5MTI1ZmQ3NzZjYjYyZjUzM2FlZjIzYw"
+}
+
+Bearer MmI2ZGFhZmMwNWRmZTJhY2IyMTQxM2VjNGMwNzczZDJiYmJiMzlhNTljNzM0Mjc2MThhNDI4NzA5ZTEwOTQ2Nw
+
+# id, random_id, redirect_uris, secret, allowed_grant_types
+
+2,
+3lpo1aw6lf8kw8c8wo44g4k8gw8swowscgg0k84kossckc4c0s,
+a:1:{i:0;s:12:"shape-api.pl";},
+5kmzj42gm48wgkwkw0cwwc40wkws4wc4g400sso0w4kwcc8sws,
+a:1:{i:0;s:8:"password";}
